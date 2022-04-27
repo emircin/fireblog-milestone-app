@@ -32,6 +32,7 @@ export default function BlogCard({ tag }) {
       navigate(`/details`, { state: { tag } })
       dispatch(setTag(tag))
     } else {
+      navigate("/login")
       noatifyDelete("Login for Details")
     }
   }

@@ -17,13 +17,13 @@ const Profile = () => {
           UserName:
         </Typography>
         <Typography variant="h5" component="div">
-          {currentUser.email.slice(0, currentUser.email.indexOf("@")).toUpperCase()}
+          {currentUser?.email.slice(0, currentUser?.email.indexOf("@")).toUpperCase()}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           Email:
         </Typography>
         <Typography variant="body2">
-        {currentUser.email}
+        {currentUser?.email}
         </Typography>
       </CardContent>
     </Card>
