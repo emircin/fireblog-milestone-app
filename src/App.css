@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: #9ed1d9;
+}
+.navbar-container h1 {
+  font-size: 2rem;
+  color: #F5D7CB;
+  cursor: pointer;
+}
+.navbar-container span {
+  font-size: 1.5rem;
+  color: #f7ecdc;
+}
+.login-wrapper {
+  background-image: url(https://picsum.photos/1600/900);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 3rem;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f7ecdc;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.login-container p{
+    font-size: 1.3rem;
+    color: #9ed1d9;
+    font-weight: 800;
+}
+.blog-img-container {
+  border-radius: 100%;
+  background-color: #9ed1d9;
+  padding: 1rem;
+  margin: 1rem;
+  width: 200px;
+}
+.blog-img-container img {
+  width: 170px;
+  height: 150px;
+}
+.new-tag-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.new-tag-form {
+  width: 400px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-tag-form div {
+  margin-bottom: 0.5rem;
+}
+.tag-title {
+  margin: 0.5rem;
+  color: #9ed1d9;
+}
+.tag-date {
+  color: grey;
+  text-decoration:underline;
+}
+.tag-content-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tag-contact-email{
+    margin: 1rem 0 1rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.tag-contact-email a{
+    text-decoration: none;
+    color: black;
+}
+.tag-contact-email p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+}
+.tag-content-detail{
+    text-align: justify;
+    margin-top: 1rem;
+}
+.header-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.header-img{
+    width: 50px;
+    cursor: pointer;
+}.header-details{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #9ed1d9;
+}
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.update-tag-img-container{
+    margin: 1.5rem;
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
